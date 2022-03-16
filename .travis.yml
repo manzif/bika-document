@@ -4,7 +4,7 @@ node_js:
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=19390e2ee7ac57402b6e19db54008aaf65e88ce8b2d8578a18929a6c96c58bc2
+    - CC_TEST_REPORTER_ID=0a6e3e7329f26ac79bcf7db23af35cd702f750f56969967bab04189aed038a14
 
 install: yarn install
 
@@ -22,4 +22,3 @@ after_success:
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-
