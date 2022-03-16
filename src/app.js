@@ -25,10 +25,10 @@ app.get('*', function(req, res){
   res.status(404).json({message: 'Endpoint not found'});
 });
 
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Server running at ${port}`);
 });
 
-export default app;
+module.exports = app;
